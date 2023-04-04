@@ -1,5 +1,6 @@
 # pip packages
 # PIL - Binary treatment including image files as well - pillow.readthedocs.io -
+# re - regex -
 ## PEP8
     ## pylint
     ## pycodestyle
