@@ -8,6 +8,7 @@ students = [
     {"name": "Draco", "house": SLYTHERIN}
 ]
 
+
 # List comprehension
 # gryffindors = [student["name"] for student in students if student["house"] == GRIFFINDOR]
 

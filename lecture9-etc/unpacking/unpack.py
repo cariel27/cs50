@@ -9,5 +9,5 @@ print(total(*coins), "Knuts")
 print(total(galleons=100, sickles=50, knuts=25), "Knuts")
 
 print("**Dictionary UNPACKING**")
-coins_dic = {"galleons": 100, "sickles": 50, "knuts":25}
+coins_dic = {"galleons": 100, "sickles": 50, "knuts": 25}
 print(total(**coins_dic), "Knuts")

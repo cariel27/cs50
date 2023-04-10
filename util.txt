@@ -1,0 +1,11 @@
+# pip packages
+# PIL - Binary treatment including image files as well - pillow.readthedocs.io -
+# re - regex -
+# mypy - Mypy is a static type checker for Python. - mypy.readthedocs.io
+# argparse - CL arguments parser - docs.python.org/3/library/argparse.html
+# pyttsx3 - Python to speach
+# cowsay
+## PEP8
+    ## pylint
+    ## pycodestyle
+    ## black
