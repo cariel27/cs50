@@ -1,20 +1,20 @@
 from model.blood_type import BloodType
 import sys
 
-blood_options = {"1": "A +", "2": "A -", "3": "B +", "4": "B -", "5": "AB +", "6": "AB -", "7": "O +", "8": "O -"}
+BLOOD_OPTIONS = {"1": "A +", "2": "A -", "3": "B +", "4": "B -", "5": "AB +", "6": "AB -", "7": "O +", "8": "O -"}
 
 
 def select_blood():
     # Get user input for donor and recipient blood types
     print("#" * 65)
-    for k, v in blood_options.items():
+    for k, v in BLOOD_OPTIONS.items():
         print(f"{k}) {v}")
     print("or Press 'Q' to exit", end="\n")
     print("#" * 65)
     while True:
         option = input("Select blood type: ")
-        if option in blood_options.keys():
-            return blood_options[option]
+        if option in BLOOD_OPTIONS.keys():
+            return BLOOD_OPTIONS[option]
         elif option.upper() == "Q":
             sys.exit("Bye.")
 
@@ -24,9 +24,9 @@ def main():
     patient_blood_type = BloodType(antigen=antigen, protein=protein)
 
     a = BloodType.get_compatible_donors(recipient_blood_type=patient_blood_type)
-    print(a)
-    # b = BloodType.get_compatible_receipts(donor_blood_type=patient_blood_type)
-    # print(b)
+    print("Compatible Donors: ", a)
+    b = BloodType.get_compatible_receipts(donor_blood_type=patient_blood_type)
+    print("Compatible Receiver: ", b)
 
 
 if __name__ == "__main__":
